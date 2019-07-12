@@ -11,11 +11,10 @@ class GroundVehicle:
         return 'vroooom'
     
 class Motorcycle(GroundVehicle):
-    num_wheels = 2
-    def __init__(self):
-        super().__init__()
-        def drive():
-            return 'BRAAAP!!'
+    def __init__(self, num_wheels = 2):
+        self.num_wheels = num_wheels
+    def drive(self):
+        return 'BRAAAP!!'
     # TODO
 
 
